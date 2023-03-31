@@ -17,13 +17,16 @@ function generateText() {
 }
 function gen1() {
   i = 0;
+  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Generating Amazon gift card code...');
 }
 function gen2() {
   i = 0;
+  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Attempting automatic human verification...');
 }
 function gen3() {
   i = 0;
+  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Verification complete! Outputting code.');
 }
