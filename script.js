@@ -10,19 +10,17 @@ function typeWriter(txt) {
   }
 }
 function generateText() {
+  document.getElementById("generating_text").innerHTML = "";
   setTimeout(gen1, 0);
   setTimeout(gen2, 2000);
   setTimeout(gen3, 4000);
 }
 function gen1() {
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Generating Amazon gift card code...');
 }
 function gen2() {
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Attempting automatic human verification...');
 }
 function gen3() {
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Verification complete! Outputting code.');
 }
