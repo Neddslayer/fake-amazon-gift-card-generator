@@ -87,6 +87,10 @@ body {
   font-size: xx-large;
 }
 
+#generate_button:hover {
+  cursor: pointer;
+}
+
 #generating_text {
   font-family: 'Rubik', 'sans-serif';
 }
