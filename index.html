@@ -12,10 +12,13 @@
     <div id="container">
       <h1 id="title">Free Amazon Gift Card Generator</h1>
       <br>
-      <button id="generate_button" onclick="$('#generation_section').fadeIn();generateText();">Generate</button>
+      <button id="generate_button" onclick="$('#generation_section').fadeIn();generateText();$('#generate_button').onclick=null;">Generate</button>
       <div id="generation_section" style="display:none">
         <p style="color:black; font-size:xx-large;" id="generating_text"></p>
         <img src="loader3.gif"></img>
+      </div>
+      <div id="successful_code_section" style="display:none">
+        <p style="color:green; font-size:xx-large;" id="generating_text">PUT CODE HERE IN PRODUCTION</p>
       </div>
     </div>
   </body>
