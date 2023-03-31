@@ -4,29 +4,23 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 const typeWriter = async (txt) => {
-  [...txt].forEach((e, i) => {
-    document.getElementById("generating_text").innerHTML += e;
-    await wait(50);
-  });
+  document.getElementById("generating_text").innerHTML = "";
+  for (const a of txt.split("")) {
+    document.getElementById("generating_text").innerHTML += a;
+    await wait(speed);
+  }
 }
 function generateText() {
-  document.getElementById("generating_text").innerHTML = "";
   setTimeout(gen1, 0);
   setTimeout(gen2, 2000);
   setTimeout(gen3, 4000);
 }
 function gen1() {
-  i = 0;
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Generating Amazon gift card code...');
 }
 function gen2() {
-  i = 0;
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Attempting automatic human verification...');
 }
 function gen3() {
-  i = 0;
-  document.getElementById("generating_text").innerHTML = "";
   typeWriter('Verification complete! Outputting code.');
 }
