@@ -7,17 +7,16 @@
     <title>Free Amazon Gift Card Generator Working 2023 No Verification</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <div id="container">
       <h1 id="title">Free Amazon Gift Card Generator</h1>
       <br>
-      <button id="generate_button">Generate</button>
+      <button id="generate_button" onclick="$('#generation_section').fadeIn();beginGeneration();">Generate</button>
       <div id="generation_section" class="">
         <p style="color:black; font-size:xx-large;" id="generating_text">Generating Gift Card Code...</p>
         <img src="loader3.gif"></img>
       </div>
     </div>
-
-    <script defer src="script.js"></script>
   </body>
 </html>
