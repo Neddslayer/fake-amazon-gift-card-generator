@@ -1,13 +1,8 @@
 var i = 0;
-var txt = 'Generating Amazon gift card code...'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter(txt) {
-  if (i < txt.length) {
-    document.getElementById("generating_text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+  [...txt].forEach((e, i) => document.getElementById("generating_text").innerHTML += e);
 }
 function generateText() {
   document.getElementById("generating_text").innerHTML = "";
@@ -16,11 +11,14 @@ function generateText() {
   setTimeout(gen3, 4000);
 }
 function gen1() {
+  i = 0;
   typeWriter('Generating Amazon gift card code...');
 }
 function gen2() {
+  i = 0;
   typeWriter('Attempting automatic human verification...');
 }
 function gen3() {
+  i = 0;
   typeWriter('Verification complete! Outputting code.');
 }
