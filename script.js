@@ -12,8 +12,8 @@ const typeWriter = async (txt) => {
 }
 function generateText() {
   setTimeout(gen1, 0);
-  setTimeout(gen2, 2000);
-  setTimeout(gen3, 4000);
+  setTimeout(gen2, 2500);
+  setTimeout(gen3, 5500);
 }
 function gen1() {
   typeWriter('Generating Amazon gift card code...');
