@@ -27,5 +27,5 @@ function gen3() {
 }
 function reveal() {
   $('#generation_section').fadeOut();
-  $('successful_code_section').fadeIn();
+  $('#successful_code_section').fadeIn();
 }
