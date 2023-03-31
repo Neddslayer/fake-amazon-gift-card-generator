@@ -3,7 +3,7 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
-async function typeWriter(txt) {
+const typeWriter = async (txt) => {
   [...txt].forEach((e, i) => {
     document.getElementById("generating_text").innerHTML += e;
     await wait(50);
