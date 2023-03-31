@@ -11,7 +11,9 @@ function typeWriter(txt) {
   }
 }
 function generateText() {
-  
+  setTimeout(gen1, 0);
+  setTimeout(gen2, 2000);
+  setTimeout(gen3, 4000);
 }
 function gen1() {
   typeWriter('Generating Amazon gift card code...');
