@@ -14,6 +14,7 @@ function generateText() {
   setTimeout(gen1, 0);
   setTimeout(gen2, 3500);
   setTimeout(gen3, 8000);
+  setTimeout(reveal, 12000);
 }
 function gen1() {
   typeWriter('Generating Amazon gift card code...');
@@ -23,4 +24,8 @@ function gen2() {
 }
 function gen3() {
   typeWriter('Verification complete! Outputting code.');
+}
+function reveal() {
+  $('#generation_section').fadeOut();
+  $('successful_code_section').fadeIn();
 }
