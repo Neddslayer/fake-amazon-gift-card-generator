@@ -1,8 +1,13 @@
 var i = 0;
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter(txt) {
-  [...txt].forEach((e, i) => document.getElementById("generating_text").innerHTML += e);
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
+
+async function typeWriter(txt) {
+  [...txt].forEach((e, i) => {
+    document.getElementById("generating_text").innerHTML += e;
+    await wait(50);
+  });
 }
 function generateText() {
   document.getElementById("generating_text").innerHTML = "";
